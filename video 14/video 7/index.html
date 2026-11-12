@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-gopi's company</title>
+</head>
+<body>
+    <h1>Fill the form</h1>
+    <form action="post">
+        <div>
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" placeholder="enter your name" required>
+        </div>
+        <br>
+        <div>
+            <label for="id01">Male</label>
+            <input type="radio" id="id01" name="gender" value="Male" >
+            <label>Female </label>
+            <input type="radio" id="id02" name="gender" value="Female">
+        </div>
+        <br>
+        <div>
+            <label for="kannada">kannada</label>
+            <input type="checkbox" id="kannada" name="languages" value="kannada">
+        
+            <label for="English">English</label>
+            <input type="checkbox" id="English" name="languages" value="english">
+            <label for="Hindi">Hindi</label>
+            <input type="checkbox" id="Hindi" name="languages" value="hindi">
+            <label for="Marathi">Marathi</label>
+            <input type="checkbox" id="Marathi" name="languages" value="marathi">
+        </div>
+        <br>
+        <div>
+            <select name="fruits" id="fruits"  >
+                <option value="apple">apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">cherry</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="feedback">any suggestions
+            </label>
+            <br>
+            <textarea type="text" id="feedback" rows="5" cols="45" placeholder="enter your feedback">
+            </textarea>
+        </div>
+    </form>
+</body>
+</html>
