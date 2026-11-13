@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element selector */
+        /* div {
+            background-color: red;
+        }  */
+
+         /* class selector */
+          .red {
+            background-color: red;
+        } 
+
+         #green {
+            background-color: green;
+        } 
+
+        /* Child selector */
+         div > p {
+            color: blue;
+            background-color: rgb(0, 255, 204);
+        } 
+
+        /* descendant selector */
+        div p {
+            color: blue;
+            background-color: yellow;
+        }
+
+        /* universel selector */
+        * {
+            margin: 0;
+            padding: 0;
+        } 
+
+        a:visited{
+            color: rgb(128, 0, 70)
+        }
+
+        a:link{
+            color:green
+        }
+
+        a:active{
+            background-color: red
+        }
+
+        a:hover{
+            background-color: rgb(0, 255, 60)
+        }
+        p:first-child{
+            color: red;
+        }
+        </style>
+</head>
+<body>
+    <div class="one">
+        <p>i am first</p>
+        <p>i am second</p>
+    </div>
+    <div class="red">
+        i am a div
+        <article>
+        <p>i am a paragraph</p>
+        </article>
+    </div>
+
+    <div id="green">
+        i am good person
+    </div>
+    <a href="https://www.google.com">google</a>
+    <a href="https://www.instagram.com">instagram</a>
+</body>
+</html>
