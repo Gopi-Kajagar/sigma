@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity and Cascade</title>
+    <style>
+        /* the specificity of this selector is 1 */
+        h1 {
+            color: red;
+        }
+        /* the specificity of this selector is 10+1=11 */
+        /* here the h1 element selector has 1 specificity and the class selector has 10 specificity so the total specificity is 11 */
+        h1.yellow {
+            color: yellow;
+        }
+        /* the specificity of this selector is 10 */
+        .cred {
+            color: crimson;
+        }
+        /* the specificity of this selector is 10 */
+        .cpurple {
+            color: rgb(30, 223, 104);
+        }
+        /* this is an example of attribute selector and specificity is 10 */
+        [data-x=a] {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+       <h1 class="yellow cred cpurple" data-x="a">Css Specificity</h1>
+    </div>
+</body>
+</html>
