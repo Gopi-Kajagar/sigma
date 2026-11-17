@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 4(Challenge)</title>
+    <style>
+        :root{
+            --color: rgb(234, 72, 72);
+            --seccolor:rgb(107, 107, 209);
+            --thrcolor:rgb(81, 199, 81);
+            --pad:6px;
+            --margin:6px;
+            
+        }
+        nav{
+            border:2px solid black;
+            width:400px;
+            height:200px;
+            border-radius: 25px;
+           list-style: none;
+           --fcolor:rgb(170, 242, 103);
+           background-color:var(--fcolor);
+
+
+        }
+        ul{
+            display:flex;
+        }
+        
+        .a{
+            border:2px solid black;
+            width:50px;
+            height:25px;
+            border-radius: 25px;
+            background-color: var(--color);
+             padding: var(--pad);
+            margin: var(--margin);
+            text-align: center;
+            list-style-type: none;
+            
+        }
+        .b{
+            border:2px solid black;
+            width:50px;
+            height:25px;
+            border-radius: 25px;
+            background-color: var(--seccolor);
+             padding: var(--pad);
+            margin: var(--margin);
+            text-align: center;
+            list-style-type: none;
+        }
+        .c{
+            border:2px solid black;
+            width:50px;
+            height:25px;
+            border-radius: 25px;
+            background-color: var(--thrcolor);
+             padding: var(--pad);
+            margin: var(--margin);
+            text-align: center;
+            list-style-type: none;
+        }
+        .d{
+            border:2px solid black;
+            width:50px;
+            height:25px;
+            border-radius: 25px;
+            background-color: var(--color);
+             padding: var(--pad);
+            margin: var(--margin);
+            text-align: center;
+            list-style-type: none;
+        }
+        p{
+            padding:var(--pad);
+            margin:var(--margin);
+        }
+        ul li:hover{
+            color:rgb(87, 238, 243);
+            background-color: rgb(228, 36, 186);
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- create nav bar with multi color -->
+   <nav>
+   
+    <ul>
+         <a href="https://www.google.com/imgres?q=home&imgurl=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod%2Fimages%2Fedc100123egan-002-6500742f5feb7.jpg%3Fcrop%3D0.688xw%3A1.00xh%3B0.157xw%2C0%26resize%3D1120%3A*&imgrefurl=https%3A%2F%2Fwww.elledecor.com%2Fdesign-decorate%2Fg8674077%2Fmodern-houses%2F&docid=v5pRC3Ah3kBB8M&tbnid=dRpQa19e7CiXBM&vet=12ahUKEwj45JXRuo-YAxWCleEIHdssAPAQnPAOegQIORAA..i&w=1120&h=1115&hcb=2&ved=2ahUKEwj45JXRuo-YAxWCleEIHdssAPAQnPAOegQIORAA" target="_blank">
+        <li class="a">Home</li>
+        </a>
+        <a href="https://www.google.com/imgres?q=home&imgurl=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod%2Fimages%2Fedc100123egan-002-6500742f5feb7.jpg%3Fcrop%3D0.688xw%3A1.00xh%3B0.157xw%2C0%26resize%3D1120%3A*&imgrefurl=https%3A%2F%2Fwww.elledecor.com%2Fdesign-decorate%2Fg8674077%2Fmodern-houses%2F&docid=v5pRC3Ah3kBB8M&tbnid=dRpQa19e7CiXBM&vet=12ahUKEwj45JXRuo-YAxWCleEIHdssAPAQnPAOegQIORAA..i&w=1120&h=1115&hcb=2&ved=2ahUKEwj45JXRuo-YAxWCleEIHdssAPAQnPAOegQIORAA" target="_blank">
+        <li class="b">About</li>
+        </a>
+        <a href="https://www.google.com/imgres?q=home&imgurl=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod%2Fimages%2Fedc100123egan-002-6500742f5feb7.jpg%3Fcrop%3D0.688xw%3A1.00xh%3B0.157xw%2C0%26resize%3D1120%3A*&imgrefurl=https%3A%2F%2Fwww.elledecor.com%2Fdesign-decorate%2Fg8674077%2Fmodern-houses%2F&docid=v5pRC3Ah3kBB8M&tbnid=dRpQa19e7CiXBM&vet=12ahUKEwj45JXRuo-YAxWCleEIHdssAPAQnPAOegQIORAA..i&w=1120&h=1115&hcb=2&ved=2ahUKEwj45JXRuo-YAxWCleEIHdssAPAQnPAOegQIORAA" target="_blank">
+        <li class="c">Project</li>
+        </a>
+        <a href="https://www.google.com/imgres?q=home&imgurl=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod%2Fimages%2Fedc100123egan-002-6500742f5feb7.jpg%3Fcrop%3D0.688xw%3A1.00xh%3B0.157xw%2C0%26resize%3D1120%3A*&imgrefurl=https%3A%2F%2Fwww.elledecor.com%2Fdesign-decorate%2Fg8674077%2Fmodern-houses%2F&docid=v5pRC3Ah3kBB8M&tbnid=dRpQa19e7CiXBM&vet=12ahUKEwj45JXRuo-YAxWCleEIHdssAPAQnPAOegQIORAA..i&w=1120&h=1115&hcb=2&ved=2ahUKEwj45JXRuo-YAxWCleEIHdssAPAQnPAOegQIORAA" target="_blank">
+        <li class="d">contact</li>
+        </a>
+    </ul>
+   
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ex esse sint neque, fugiat debitis deserunt corporis optio reprehenderit consectetur quidem eum amet iure sed maiores dolorem alias architecto. Necessitatibus a est vero numquam!</p>
+    </nav>
+
+</body>
+</html>
