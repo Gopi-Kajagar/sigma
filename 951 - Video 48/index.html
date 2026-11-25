@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8(Challenge) Bounce Animation</title>
+    <style>
+        .container{
+            background-color: blue;
+            width:900px;
+            height:400px;
+        }
+        .ball{
+            background-color: red;
+            width:70px;
+            height:70px;
+            border-radius: 40px;
+            text-align: center;
+            /* animation-name: gopianimation;
+            animation-duration: 5s; */
+            /* animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1); */
+            /* animation-delay: 1s;
+            animation-direction:normal; */
+            animation: gopianimation 5s cubic-bezier(0, 0.91, 0.09, 1.04) 1s normal,
+                    gopi 2s;
+                   
+                    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            /* animation:gopi 5s ; */
+
+            
+        }
+        @keyframes gopianimation {
+            from{
+                transform:translate(800px);
+                
+            }
+            to{
+
+            }
+            
+            
+        }
+        @keyframes gopi {
+            0%{
+                transform: translateX(10%);
+                /* transform: translateY(100%); */
+                transform: translateZ(20%);
+            }
+             10%{
+                /* transform: translateX(200%); */
+                transform: translateY(20%);
+                transform: translateZ(20%);
+            }
+            20%{
+                /* transform: translateX(300%); */
+                transform: translateY(30%);
+                transform: translateZ(20%);
+            }
+            30%{
+                transform: translateX(40%);
+                transform: translateZ(20%);
+                /* transform: translateY(400%); */
+            }
+           40%{
+                /* transform: translateX(500%); */
+                transform: translateY(50%);
+                transform: translateZ(20%);
+            }  
+            50%{
+                transform: translateX(60%);
+                transform: translateZ(20%);
+                /* transform: translateY(600%); */
+            }
+            60%{
+                /* transform: translateX(700%); */
+                transform: translateY(70%);
+                transform: translateZ(20%);
+            
+            }
+            70%{
+                transform: translateX(80%);
+                transform: translateZ(20%);
+                /* transform: translateY(800%); */
+            }
+            80%{
+                /* transform: translateX(900%); */
+                transform: translateY(90%);
+                transform: translateZ(20%);
+                
+            }
+            90%{
+                transform: translateX(100%);
+                transform: translateZ(20%);
+                /* transform: translateY(900%); */
+            }
+            100%{
+                /* transform: translateX(1000%); */
+                transform: translateY(100%);
+                transform: translateZ(20%);
+            }
+            
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+            
+        </div>
+    </div>
+</body>
+</html>
