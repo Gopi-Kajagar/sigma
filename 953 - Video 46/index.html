@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color: rgb(72, 173, 173);
+            height: 80vh;
+            width: 30vw;
+
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation: gopianimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-delay: 3s; */
+            /* animation-direction:alternate-reverse; */
+            /* animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation:gopianimation 3s ease-in-out 1s 1 ,
+                    kajagaranimation 3s ease-in-out 3s 1;
+            
+        }
+        @keyframes gopianimation{
+            from{
+                background-color: red;
+            }
+            to{
+                /* transform: translate(1000px); */
+                background-color: yellow;
+            }
+            
+        }
+        @keyframes kajagaranimation {
+                0%{
+                    transform:rotate(100deg);
+                }
+
+                10%{
+                    transform:rotate(200deg);
+                }
+                20%{
+                    transform:rotate(220deg);
+                }
+                50%{
+                    transform:rotate(3000deg);
+                }
+                100%{
+                    transform:rotate(310deg);
+                }
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
