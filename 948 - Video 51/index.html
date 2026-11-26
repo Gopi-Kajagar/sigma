@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8(Challenge) Bounce Animation</title>
+    <style>
+        .container{
+            position: relative;
+            background-color: blue;
+            height:80vh;
+            width:80vw;
+        }
+        .ball{
+            background-color: red;
+            width:121px;
+            height:121px;
+            position:absolute;
+            border-radius: 70px;
+            text-align: center;
+            bottom: 0;
+            left: 0;
+            animation: ballX 3s linear infinite,
+            ballY 1s ease-out infinite alternate;
+            /* animation-name: gopianimation;
+            animation-duration: 5s; */
+            /* animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1); */
+            /* animation-delay: 1s;
+            animation-direction:normal; */
+            /* animation: gopianimation 5s cubic-bezier(0, 0.91, 0.09, 1.04) 1s normal,
+                    gopi 2s; */
+                   
+                    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            /* animation:gopi 5s ; */
+
+            
+        }
+        .ball1{
+            background-color: rgb(68, 255, 0);
+            width:121px;
+            height:121px;
+            position:absolute;
+            border-radius: 70px;
+            text-align: center;
+            bottom : 0;
+            right: 0;
+            animation: ball1X 3s linear infinite,
+            ball1Y 1s ease-in infinite alternate;
+
+        }
+        .ball2{
+            background-color: rgb(209, 153, 123);
+            width:121px;
+            height:121px;
+            position:absolute;
+            border-radius: 70px;
+            text-align: center;
+            top : 0;
+            left : 0;
+            animation: ball2Y 3s linear infinite,
+            ball2X 1s ease-out infinite alternate;
+
+        }
+        .ball3{
+            background-color: rgb(226, 44, 193);
+            width:121px;
+            height:121px;
+            position:absolute;
+            border-radius: 70px;
+            text-align: center;
+            top : 0;
+            right : 0;
+            animation: ball3Y 3s linear infinite,
+            ball3X 1s ease-in infinite alternate;
+
+        }
+        @keyframes ballX {
+            from{
+                left: 0%;
+                
+            }
+            to{
+                 left: 100%;
+
+            }
+            
+            
+        }
+         @keyframes ballY {
+            from{
+                bottom: 0%;
+                
+            }
+            to{
+                bottom: 100%;
+            }
+            
+            
+        }
+        @keyframes ball1X {
+            from{
+                left: 0%;
+                
+            }
+            to{
+                 left: 100%;
+
+            }
+            
+            
+        }
+         @keyframes ball1Y {
+            from{
+                top: 0%;
+                
+            }
+            to{
+                top : 100%;
+            }
+            
+            
+        }
+
+
+        @keyframes ball2X {
+            from{
+                left : 0%;
+                
+            }
+            to{
+                 left : 100%;
+
+            }
+            
+            
+        }
+         @keyframes ball2Y {
+            from{
+                top : 0%;
+                
+            }
+            to{
+                top : 100%;
+            }
+            
+            
+        }
+
+        @keyframes ball3X {
+            from{
+                left : 0%;
+                
+            }
+            to{
+                 left : 100%;
+
+            }
+            
+            
+        }
+         @keyframes ball3Y {
+            from{
+                top : 0%;
+                
+            }
+            to{
+                top : 100%;
+            }
+            
+            
+        }
+
+        
+
+
+        
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+            
+        </div>
+        <div class="ball1">
+            
+        </div>
+        <div class="ball2">
+            
+        </div>
+        <div class="ball3">
+            
+        </div>
+
+    </div>
+</body>
+</html>
