@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+    background-color: black;
+    height:auto;
+}
+
+.main{
+    background-image: url("assests/images/backgroundimg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:max(1200px, 100vw) ;
+    height:70vh;
+    position: relative;
+
+}
+
+.main .box{
+    height: 00vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:100px;
+    height: 62px;
+}
+nav img{
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    font-family:"Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    height:calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    /* font-size: 25px; */
+    position: relative;
+    gap:23px;
+    padding:0px 29px;
+    
+
+}
+
+.hero> :nth-child(1){
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+
+}
+
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation{
+    height:11px;
+    background-color: grey;
+    
+}
+
+.btn{
+    padding:3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: red;
+    padding: 3px 24px;
+    color: white;
+    font-size:20px;
+    border-radius: 4px;
+    font-weight: 400;
+
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+
+}
+
+.main input{
+     padding:7px 101px 8px 14px; 
+     color: white ;
+    font-size:12px;
+    /* font-weight: 900; */
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    /* opacity: 0.5; */
+    border:1px solid rgba(246, 238, 238, 0.5);
+
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.text{
+    position: relative;
+    z-index: 10;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    gap: 23px;
+    padding:10px;
+    margin: 10px;
+}
+
+.list{
+    border: 2px solid black;
+    margin:20px;
+    padding: 26px;
+    width: 200%;
+    height: 200px;
+    display: flex;
+    gap:30px;
+    overflow-x: scroll;
+    background-color: rgb(11, 8, 8);
+    /* background-image: url("assests/images/row1img.webp"); */
+}
+
+
+.list .m1{
+    width:150px;
+    height:200px;
+    background-image:url("assests/images/row1img.webp");
+    object-fit :contain;
+    border-radius: 15px;
+    object-position: center center;
+}
+
+.list .m2{
+    width:150px;
+    height:200px;
+    background-image:url("assests/images/row2img.webp");
+    object-fit :contain;
+    border-radius: 15px;
+    object-position: center center;
+}
+
+.list .m3{
+    width:150px;
+    height:200px;
+    background-image:url("assests/images/row3img.webp");
+    object-fit :contain;
+    border-radius: 15px;
+    object-position: center center;
+}
+
+.list .m4{
+    width:150px;
+    height:200px;
+    background-image:url("assests/images/row4img.webp");
+    object-fit :contain;
+    border-radius: 15px;
+    object-position: center center;
+}
+
+.list .m5{
+    width:150px;
+    height:200px;
+    background-image:url("assests/images/row5img.webp");
+    object-fit :contain;
+    border-radius: 15px;
+    object-position: center center;
+}
+
+.list .m6{
+    width:150px;
+    height:200px;
+    background-image:url("assests/images/row6img.webp");
+    object-fit :contain;
+    border-radius: 15px;
+    object-position: center center;
+}
+
+.list .m7{
+    width:150px;
+    height:200px;
+    background-image:url("assests/images/row7img.webp");
+    object-fit :contain;
+    border-radius: 15px;
+    object-position: center center;
+}
+
+.list .m8{
+    width:150px;
+    height:200px;
+    background-image:url("assests/images/row8img.webp");
+    object-fit :contain;
+    border-radius: 15px;
+    object-position: center center;
+}
+
+.list .m9{
+    width:150px;
+    height:200px;
+    background-image:url("assests/images/row9img.webp");
+    object-fit :contain;
+    border-radius: 15px;
+    object-position: center center;
+}
+
+.list .m10{
+    width:150px;
+    height:200px;
+    background-image:url("assests/images/row10img.webp");
+    object-fit :contain;
+    border-radius: 15px;
+    object-position: center center;
+}
+
+/* .secImg{
+    padding:10px;
+    margin-top:10px;
+} */
+
+
+    
+    
+
+
+
